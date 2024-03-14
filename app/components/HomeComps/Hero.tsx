@@ -114,7 +114,7 @@ export const Hero = () => {
                 <div className="flex justify-center mx-auto text-5xl mt-20 font-semibold">About Me</div>
                 <div className="flex justify-center gap-x-40">
                     <div className="max-w-lg ml-5 text-xl sm:text-2xl items-center my-auto mt-10">
-                        I'm Aarjav Jain, a 14-year-old living in India. I am a self-taught programmer who loves to code and create things. Currently, I'm diving into Next.js, Nest.js, Prisma, TurboRepo, and some other exciting tooling.
+                        I&apos;m Aarjav Jain, a 14-year-old living in India. I am a self-taught programmer who loves to code and create things. Currently, I&apos;m diving into Next.js, Nest.js, Prisma, TurboRepo, and some other exciting tooling.
                     </div>
                     <div className="flex flex-col border shadow-xl rounded-lg dark:shadow-none max-h-fit mt-10">
                         <div>
