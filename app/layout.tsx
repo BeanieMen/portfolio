@@ -6,7 +6,8 @@ import Navbar from "./components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Metrol Media",
+  title: "Beanie",
+  description: "A portfolio website"
 };
 
 export default function RootLayout({
