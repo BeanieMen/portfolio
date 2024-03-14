@@ -14,7 +14,7 @@ export default function MenuDropDown() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" size="icon" className="border-0 md:hidden">
+        <Button variant="outline" size="icon" className="border-0 md:hidden bg-">
           <Menu />
           <span className="sr-only">Menu</span>
         </Button>
