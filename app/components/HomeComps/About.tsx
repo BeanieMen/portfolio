@@ -11,7 +11,7 @@ const AboutMe = () => {
             transition={{ duration: 0.8 }}
             className="about-me-container"
         >
-            <div className="flex text-6xl justify-center mt-28">About Me</div>
+            <div className="flex text-4xl font-semibold justify-center mt-28">About Me</div>
 
             <div className='flex flex-col gap-[5vw] justify-center items-center md:flex-row mt-10'>
                 <span className="mx-5 text-lg md:text-2xl max-w-lg justify-center ">
