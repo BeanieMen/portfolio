@@ -43,7 +43,7 @@ export const Hero = () => {
 
     return (
         <div className='md:my-16'>
-            <div className='flex flex-col-reverse gap-8 justify-center items-center md:flex-row'>
+            <div className='flex flex-col-reverse gap-[10vw] justify-center items-center md:flex-row'>
                 <motion.div
                     className='flex flex-col gap-4 md:max-w-xl'
                     initial={{
@@ -69,7 +69,7 @@ export const Hero = () => {
                                 ))}
                             </div>
                         </div>{' '}
-                        websites using React.
+                        websites using Next.
                     </h1>
                     <div className='mx-5 text-sm text-muted-foreground'>
                         India • UTC/GMT +5:30
@@ -92,7 +92,7 @@ export const Hero = () => {
                         className='rounded-full justify-start '
                         width={112}
                         height={112}
-                        alt='Hong'
+                        alt='Beanie'
                     />
                     <div className='absolute inset-0 -z-10 bg-gradient-to-tl from-purple-700 to-orange-700 opacity-0 blur-2xl md:opacity-50' />
                 </motion.div>
