@@ -14,9 +14,11 @@ export default function Navbar() {
         duration: 0.5
       }}
     >
-      <div className='relative min-w-10'>
-        <div className='absolute min-w-20 inset-0 flex items-center justify-center -z-50 bg-gradient-to-tl w-[70vw] px-[5vw] from-blue-700 to-pink-700 via-orange-700 opacity-75 blur-3xl md:opacity-60'/>
-        <div className="w-[70vw]  h-14 my-10 min-w-20 rounded-md bg-black bg-opacity-50 flex justify-center items-center"/>
+      <div className='relative'>
+        <div className='absolute inset-0 flex items-center justify-center -z-50'>
+          <div className='w-full h-full bg-gradient-to-r from-blue-700 via-orange-500 to-pink-700 opacity-75 blur-3xl' />
+        </div>
+        <div className="sm:max-w-xl md:max-w-2xl w-[80vw] h-14 my-10 rounded-md bg-black bg-opacity-50 flex justify-center items-center" />
       </div>
     </motion.div>
   );
