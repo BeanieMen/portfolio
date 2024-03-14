@@ -5,6 +5,7 @@ import { useAnimation, motion, useAnimate } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import * as React from 'react'
+import About from "@/app/components/HomeComps/About"
 import Navbar from "@/app/components/Navbar";
 
 function ScrollAnimation({ children }: any) {
@@ -38,6 +39,7 @@ export default function home() {
     <div>
     <Navbar/>
     <Hero/>
+    <About/>
     </div>
   )
 }

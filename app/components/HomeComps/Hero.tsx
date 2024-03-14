@@ -1,8 +1,6 @@
 import { motion, useAnimate } from "framer-motion";
 import * as React from 'react'
 import Image from "next/image";
-import { Linkedin, Github, LinkIcon } from "lucide-react";
-import Link from "next/link";
 const TEXTS = [
     {
         text: 'amazing',
@@ -56,7 +54,7 @@ export const Hero = () => {
                         opacity: 1
                     }}
                     transition={{
-                        duration: 0.5
+                        duration: 0.8
                     }}
                 >
                     <h1 className='mx-5 bg-gradient-to-b from-black via-black/90 to-black/70 to-90% bg-clip-text font-title text-2xl font-bold leading-9 text-transparent dark:from-white dark:via-white/90 dark:to-white/70 sm:text-4xl sm:leading-[3.5rem]'>
@@ -98,41 +96,6 @@ export const Hero = () => {
                     <div className='absolute inset-0 -z-10 bg-gradient-to-tl from-purple-700 to-orange-700 opacity-0 blur-2xl md:opacity-80' />
                 </motion.div>
             </div>
-            <motion.div
-                initial={{
-                    y: 40,
-                    opacity: 0
-                }}
-                animate={{
-                    y: 0,
-                    opacity: 1
-                }}
-                transition={{
-                    duration: 0.5
-                }}
-            >
-                <div className="flex justify-center mx-auto text-5xl mt-20 font-semibold">About Me</div>
-                <div className="flex justify-center gap-x-40">
-                    <div className="max-w-lg ml-5 text-xl sm:text-2xl items-center my-auto mt-10">
-                        I&apos;m Aarjav Jain, a 14-year-old living in India. I am a self-taught programmer who loves to code and create things. Currently, I&apos;m diving into Next.js, Nest.js, Prisma, TurboRepo, and some other exciting tooling.
-                    </div>
-                    <div className="flex flex-col border shadow-xl rounded-lg dark:shadow-none max-h-fit mt-10">
-                        <div>
-                            <div className="p-5 px-3 justify-start text-2xl font-light flex items-center max-w-sm">
-                                <LinkIcon /> &nbsp; Links
-                            </div>
-                            <div className="flex flex-col my-auto justify-center items-center">
-                                <div className="px-3 ml-3 justify-start font-extralight text-xl flex items-center max-w-sm">
-                                    <Link href={'https://github.com/BeanieMen'} className="flex place-items-center justify-center mx-auto"><Github /> &nbsp; Github</Link>
-                                </div>
-                                <div className="px-3 ml-3 justify-start font-extralight text-xl flex items-center max-w-sm">
-                                    <Link href={'https://www.linkedin.com/in/aarjav-jain-b2aa23216/'} className="flex place-items-center justify-center mx-auto"><Linkedin /> &nbsp; LinkedIn</Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </motion.div>
         </div>
     );
 };
