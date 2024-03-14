@@ -10,16 +10,10 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 768); // Adjust the breakpoint as needed
+      setIsDesktop(window.innerWidth >= 768); 
     };
-
-    // Add event listener for window resize
     window.addEventListener('resize', handleResize);
-
-    // Initial check for screen size
     handleResize();
-
-    // Cleanup event listener
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
