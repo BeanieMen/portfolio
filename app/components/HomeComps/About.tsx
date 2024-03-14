@@ -25,12 +25,12 @@ const AboutMe = () => {
                             <LinkIcon /> &nbsp; Links
                         </div>
 
-                        <div className="flex flex-col my-auto justify-center items-center">
+                        <div className="flex flex-col my-auto ">
                             <div className="px-3 ml-3 justify-start font-extralight text-xl flex items-center max-w-sm">
-                                <Link href={'https://github.com/BeanieMen'} className="flex place-items-center justify-center mx-auto"><Github /> &nbsp; Github</Link>
+                                <Link href={'https://github.com/BeanieMen'} className="flex  justify-start "><Github /> &nbsp; Github</Link>
                             </div>
                             <div className="px-3 ml-3 justify-start font-extralight text-xl flex items-center max-w-sm">
-                                <Link href={'https://www.linkedin.com/in/aarjav-jain-b2aa23216/'} className="flex place-items-center justify-center mx-auto"><Linkedin /> &nbsp; LinkedIn</Link>
+                                <Link href={'https://www.linkedin.com/in/aarjav-jain-b2aa23216/'} className="flex  justify-start"><Linkedin /> &nbsp; LinkedIn</Link>
                             </div>
                         </div>
                     </div>
