@@ -21,7 +21,7 @@ const AboutMe = () => {
 
                 <div className="flex flex-col border items-center my-auto shadow-xl rounded-lg dark:shadow-none max-h-fit  p-5 max-w-fit ">
                     <div>
-                        <div className="p-5 px-3 justify-start text-2xl font-light flex items-center max-w-sm">
+                        <div className="pb-3 justify-start text-2xl font-light flex items-center max-w-sm">
                             <LinkIcon /> &nbsp; Links
                         </div>
 

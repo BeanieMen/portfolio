@@ -40,7 +40,7 @@ export default function Navbar() {
         <div className='absolute inset-0 flex items-center justify-center -z-50'>
           <div className='w-full h-full bg-gradient-to-r from-blue-700 via-orange-500 to-pink-700 opacity-75 blur-3xl' />
         </div>
-        <div className={`sm:max-w-3xl md:max-w-4xl w-[80vw] h-14 my-10 rounded-lg bg-white dark:bg-black bg-opacity-50 grid ${isDesktop ? 'grid-cols-3' : 'grid-cols-2'} justify-between items-center`}>
+        <div className={`sm:max-w-3xl md:max-w-4xl w-[80vw] h-14 my-10 rounded-lg bg-white dark:bg-black bg-opacity-40 dark:bg-opacity-40 grid ${isDesktop ? 'grid-cols-3' : 'grid-cols-2'} justify-between items-center`}>
           <div>
             <Link href="/">
               <Image
