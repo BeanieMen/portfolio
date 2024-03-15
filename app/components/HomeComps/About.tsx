@@ -58,8 +58,8 @@ const AboutMe = () => {
           </div>
         ) : (
           <div className="flex flex-col items-center my-auto shadow-xl rounded-lg dark:shadow-none max-h-fit  p-5 max-w-fit ">
-            <div className="flex flex-col my-auto ">
-              <div className="px-3 ml-3 justify-start font-extralight text-xl flex items-center max-w-md">
+            <div className="flex flex-col">
+              <div className="px-3 ml-3 justify-start font-extralight text-xl mb-5 flex items-center max-w-md">
                 <Link
                   href={'https://github.com/BeanieMen'}
                   className="flex  justify-start "
