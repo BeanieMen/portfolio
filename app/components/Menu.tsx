@@ -23,7 +23,10 @@ export default function MenuDropDown() {
           <span className="sr-only">Menu</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="bg-white dark:bg-black border-0">
+      <DropdownMenuContent
+        align="end"
+        className="bg-white dark:bg-black border-0"
+      >
         <DropdownMenuItem onClick={() => (window.location.href = '/projects')}>
           Projects
         </DropdownMenuItem>
