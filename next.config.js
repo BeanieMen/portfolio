@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  distDir: "./out",
+  distDir: './out',
   images: {
-
     remotePatterns: [
       {
         protocol: 'https',
@@ -10,6 +9,6 @@ const nextConfig = {
       },
     ],
   },
-};
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig

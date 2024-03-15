@@ -1,22 +1,22 @@
 'use client'
 
-import { Hero } from "@/app/components/HomeComps/Hero";
-import { useAnimation, motion, useAnimate } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
+import { Hero } from '@/app/components/HomeComps/Hero'
+import { useAnimation, motion, useAnimate } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+import { useEffect } from 'react'
 import * as React from 'react'
-import About from "@/app/components/HomeComps/About"
-import Navbar from "@/app/components/Navbar";
+import About from '@/app/components/HomeComps/About'
+import Navbar from '@/app/components/Navbar'
 
 function ScrollAnimation({ children }: any) {
-  const controls = useAnimation();
-  const [ref, inView] = useInView();
+  const controls = useAnimation()
+  const [ref, inView] = useInView()
 
   useEffect(() => {
     if (inView) {
-      controls.start("visible");
+      controls.start('visible')
     }
-  }, [controls, inView]);
+  }, [controls, inView])
 
   return (
     <motion.div
@@ -25,23 +25,20 @@ function ScrollAnimation({ children }: any) {
       initial="hidden"
       variants={{
         visible: { opacity: 1, translateY: 0, transition: { duration: 1 } },
-        hidden: { opacity: 0, translateY: "5%", transition: { duration: 1 } }
+        hidden: { opacity: 0, translateY: '5%', transition: { duration: 1 } },
       }}
     >
       {children}
     </motion.div>
-  );
+  )
 }
 
 export default function home() {
   return (
-
     <div>
-    <Navbar/>
-    <Hero/>
-    <About/>
+      <Navbar />
+      <Hero />
+      <About />
     </div>
   )
 }
-
-

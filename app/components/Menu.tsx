@@ -1,32 +1,36 @@
-"use client";
+'use client'
 
-import * as React from "react";
-import { Menu } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import * as React from 'react'
+import { Menu } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from '@/components/ui/dropdown-menu'
 
 export default function MenuDropDown() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" size="icon" className="border-0 md:hidden bg-">
+        <Button
+          variant="outline"
+          size="icon"
+          className="border-0 md:hidden bg-"
+        >
           <Menu />
           <span className="sr-only">Menu</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => window.location.href = "/projects"}>
+        <DropdownMenuItem onClick={() => (window.location.href = '/projects')}>
           Projects
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => window.location.href = "/blog"}>
+        <DropdownMenuItem onClick={() => (window.location.href = '/blog')}>
           Blog
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
-  );
+  )
 }

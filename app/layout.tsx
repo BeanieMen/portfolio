@@ -1,19 +1,19 @@
-import type { Metadata } from "next";
-import { Inter, Pacifico } from "next/font/google";
-import "./globals.css";
-import { ThemeProvider } from "./components/theme-provider";
-import Navbar from "./components/Navbar";
-const inter = Inter({ subsets: ["latin"] });
+import type { Metadata } from 'next'
+import { Inter, Pacifico } from 'next/font/google'
+import './globals.css'
+import { ThemeProvider } from './components/theme-provider'
+import Navbar from './components/Navbar'
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "Beanie",
-  description: "A portfolio website"
-};
+  title: 'Beanie',
+  description: 'A portfolio website',
+}
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="en">
@@ -24,10 +24,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          
-            {children}
-          </ThemeProvider>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
-  );
+  )
 }
