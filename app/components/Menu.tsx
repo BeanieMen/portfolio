@@ -30,7 +30,7 @@ export default function MenuDropDown() {
         <DropdownMenuItem onClick={() => (window.location.href = '/projects')}>
           Projects
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => (window.location.href = '/blog')}>
+        <DropdownMenuItem onClick={() => (window.location.href = '/blogs')}>
           Blog
         </DropdownMenuItem>
       </DropdownMenuContent>

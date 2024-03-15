@@ -55,7 +55,9 @@ export default function Navbar() {
             <div className="hidden md:flex items-center gap-x-10 justify-center">
               <div>Dashboard</div>
               <div>Projects</div>
-              <div>Blog</div>
+              <div>
+                <Link href={'/blogs'}>Blog</Link>
+              </div>
             </div>
           )}
           <div className="flex justify-end mx-5">

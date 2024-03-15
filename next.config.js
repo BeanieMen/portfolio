@@ -9,8 +9,8 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'cdn.sanity.io'
-      }
+        hostname: 'cdn.sanity.io',
+      },
     ],
   },
 }
