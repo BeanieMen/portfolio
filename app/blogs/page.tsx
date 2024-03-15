@@ -70,12 +70,12 @@ export default function Blog() {
               idx % 2 === 0 && (
                 <>
                   <BlogCard
-                    className={`flex ml-5 ${isDesktop ? 'justify-start' : 'justify-center'}`}
+                    className={`flex mx-3 ${isDesktop ? 'justify-start' : 'justify-center'}`}
                     post={post}
                   />
                   {data[idx + 1] && (
                     <BlogCard
-                      className={`flex mr-5 ${isDesktop ? 'justify-start' : 'justify-center'}`}
+                      className={`flex mx-3 ${isDesktop ? 'justify-start' : 'justify-center'}`}
                       post={data[idx + 1]}
                       key={idx + 1}
                     />
