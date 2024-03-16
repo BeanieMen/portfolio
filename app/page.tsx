@@ -7,7 +7,7 @@ import { useEffect } from 'react'
 import * as React from 'react'
 import About from '@/app/components/HomeComps/About'
 import Navbar from '@/app/components/Navbar'
-
+import Articles from '@/app/components/HomeComps/Articles'
 function ScrollAnimation({ children }: any) {
   const controls = useAnimation()
   const [ref, inView] = useInView()
@@ -39,6 +39,7 @@ export default function home() {
       <Navbar />
       <Hero />
       <About />
+      <Articles/>
     </div>
   )
 }

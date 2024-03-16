@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <motion.div
-      className="flex items-center justify-center relative"
+      className="-mt-5 flex items-center justify-center relative"
       initial={{
         scale: 0,
       }}
@@ -37,7 +37,7 @@ export default function Navbar() {
           <div className="w-full h-full bg-gradient-to-r from-blue-700 via-orange-500 to-pink-700 opacity-75 blur-3xl" />
         </div>
         <div
-          className={`sm:max-w-3xl md:max-w-4xl w-[80vw] h-14 my-10 rounded-lg bg-white dark:bg-black bg-opacity-40 dark:bg-opacity-40 grid ${isDesktop ? 'grid-cols-3' : 'grid-cols-2'} justify-between items-center`}
+          className={` max-w-4xl w-[95vw]  h-14 my-10 rounded-lg bg-white dark:bg-black bg-opacity-40 dark:bg-opacity-40 grid ${isDesktop ? 'grid-cols-3' : 'grid-cols-2'} justify-between items-center`}
         >
           <div>
             <Link href="/">
@@ -53,7 +53,6 @@ export default function Navbar() {
 
           {isDesktop && (
             <div className="hidden md:flex items-center gap-x-10 justify-center">
-              <div>Dashboard</div>
               <div>Projects</div>
               <div>
                 <Link href={'/blogs'}>Blog</Link>
