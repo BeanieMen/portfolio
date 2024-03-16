@@ -37,7 +37,7 @@ export default function AboutMe() {
             other exciting tooling.
           </span>
           {!isDesktop ? (
-            <div className="flex flex-col items-center my-auto shadow-xl rounded-lg dark:shadow-none max-h-fit p-5 max-w-fit ">
+            <div className="flex flex-col items-center my-auto rounded-lg max-h-fit p-5 max-w-fit ">
               <div className="flex justify-center items-center mr-10">
                 <div className="px-3 ml-3 justify-start font-extralight text-xl flex items-center max-w-sm">
                   <Link

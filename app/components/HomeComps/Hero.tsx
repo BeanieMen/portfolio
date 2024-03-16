@@ -103,7 +103,7 @@ export const Hero = () => {
               duration: 0.5,
             }}
           >
-            <div className={`relative ${isDesktop ? 'mx-5' : ''}`}>
+            <div className={`relative`}>
               <Image
                 src="/avatar.jpg"
                 className="object-cover rounded-full mt-5"
