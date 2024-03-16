@@ -6,7 +6,6 @@ import { client } from '@/lib/sanity'
 import Navbar from '@/app/components/Navbar'
 import BlogCard from '@/app/components/BlogCard'
 import { motion } from 'framer-motion'
-export const revalidate = 30 // revalidate at most 30 seconds
 
 export default function Blog() {
   const [data, setData] = useState<simpleBlogCard[] | null>(null)
@@ -48,23 +47,23 @@ export default function Blog() {
       initial={{ y: 40, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8 }}
-      className="about-me-container"
+      className="mx-5"
     >
       <main>
         <Navbar />
         <div className="max-w-4xl mx-auto">
-          <div className="flex mx-10 justify-start text-5xl font-semibold mt-3">
+          <div className="flex justify-start text-5xl font-semibold mt-3">
             Blog
           </div>
-          <div className="mt-3 mx-10 text-xl font-light text-gray-400">
+          <div className="mt-3 text-xl font-light dark:text-gray-400 text-gray-800">
             Just a blog page I started doing to learn about sanity and content
             management systems
           </div>
         </div>
 
-        <div className="w-full mt-5 h-[1px] bg-slate-800"></div>
+        <div className="w-screen -ml-5 mt-5 h-[1px] bg-slate-800"></div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1 mt-5 gap-5 max-w-4xl justify-center mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1 mt-20 gap-5 max-w-4xl justify-center mx-auto">
           {data.map(
             (post, idx) =>
               idx % 2 === 0 && (

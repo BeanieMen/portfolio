@@ -4,8 +4,6 @@ import { PortableText } from '@portabletext/react'
 import Image from 'next/image'
 import Navbar from '@/app/components/Navbar'
 
-export const revalidate = 30 // revalidate at most 30 seconds
-
 async function getData(slug: string) {
   const query = `
     *[_type == "blog" && slug.current == '${slug}'] {
@@ -22,10 +20,10 @@ async function getData(slug: string) {
 export default async function BlogArticle({
   params,
 }: {
-  params: { slug: string }
+  params: { slugs: string }
 }) {
-  const data: fullBlog = await getData(params.slug)
-
+  const data: fullBlog = await getData(params.slugs)
+  console.log(params)
   return (
     <main>
       <Navbar />

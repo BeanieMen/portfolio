@@ -7,7 +7,9 @@ import { useEffect } from 'react'
 import * as React from 'react'
 import About from '@/app/components/HomeComps/About'
 import Navbar from '@/app/components/Navbar'
-import Articles from '@/app/components/HomeComps/Articles'
+import Blogs from '@/app/components/HomeComps/Blogs'
+import Footer from '@/app/components/HomeComps/Footer'
+
 function ScrollAnimation({ children }: any) {
   const controls = useAnimation()
   const [ref, inView] = useInView()
@@ -24,8 +26,8 @@ function ScrollAnimation({ children }: any) {
       animate={controls}
       initial="hidden"
       variants={{
-        visible: { opacity: 1, translateY: 0, transition: { duration: 1 } },
-        hidden: { opacity: 0, translateY: '5%', transition: { duration: 1 } },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+        hidden: { opacity: 0, y: '15%', transition: { duration: 0.5 } },
       }}
     >
       {children}
@@ -37,9 +39,16 @@ export default function home() {
   return (
     <div>
       <Navbar />
-      <Hero />
-      <About />
-      <Articles/>
+      <ScrollAnimation>
+        <Hero />
+      </ScrollAnimation>
+      <ScrollAnimation>
+        <About />
+      </ScrollAnimation>
+      <ScrollAnimation>
+        <Blogs />
+      </ScrollAnimation>
+      <Footer />
     </div>
   )
 }

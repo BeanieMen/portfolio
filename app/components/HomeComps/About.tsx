@@ -17,13 +17,8 @@ export default function AboutMe() {
   }, [])
 
   return (
-    <div className='mx-5'>
-      <motion.div
-        initial={{ y: 40, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8 }}
-        className="about-me-container max-w-4xl mx-auto"
-      >
+    <div className="mx-5">
+      <div className="max-w-4xl mx-auto">
         <div className="flex text-4xl font-bold justify-center mt-28">
           About Me
         </div>
@@ -83,7 +78,7 @@ export default function AboutMe() {
             </div>
           )}
         </div>
-      </motion.div>
+      </div>
     </div>
   )
 }
