@@ -27,8 +27,8 @@ export default function MenuDropDown() {
         align="end"
         className="bg-white dark:bg-black border-0"
       >
-        <DropdownMenuItem onClick={() => (window.location.href = '/projects')}>
-          Projects
+        <DropdownMenuItem onClick={() => (window.location.href = '/about')}>
+          About
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => (window.location.href = '/blogs')}>
           Blog

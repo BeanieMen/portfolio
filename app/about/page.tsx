@@ -38,8 +38,7 @@ export default function Blog() {
         </div>
         <div className="w-screen -ml-5 mt-5 h-[1px] bg-slate-800"></div>
 
-
-        <div className='mx-5 mt-10'>
+        <div className="mx-5 mt-10">
           <div className="text-2xl font-bold justify-between max-w-4xl mx-auto">
             WHOAMI
           </div>
