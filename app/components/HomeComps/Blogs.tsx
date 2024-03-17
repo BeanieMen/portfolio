@@ -40,7 +40,6 @@ export default function Blogs() {
   }, [])
   if (!data) return
   else {
-    console.log(data)
     return (
       <div className="mx-5">
         <div className=" max-w-4xl mx-auto">

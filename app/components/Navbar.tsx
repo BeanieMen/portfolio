@@ -53,7 +53,9 @@ export default function Navbar() {
 
           {isDesktop && (
             <div className="hidden md:flex items-center gap-x-10 justify-center">
-              <div>Projects</div>
+              <div>
+                <Link href={'/About'}>About</Link>
+              </div>{' '}
               <div>
                 <Link href={'/blogs'}>Blog</Link>
               </div>

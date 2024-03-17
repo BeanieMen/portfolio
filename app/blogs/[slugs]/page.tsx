@@ -23,7 +23,6 @@ export default async function BlogArticle({
   params: { slugs: string }
 }) {
   const data: fullBlog = await getData(params.slugs)
-  console.log(params)
   return (
     <main>
       <Navbar />

@@ -16,6 +16,10 @@ module.exports = {
       },
     },
     extend: {
+      blur: {
+        '4xl': '100px',
+      },
+
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },
