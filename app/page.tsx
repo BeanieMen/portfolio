@@ -1,5 +1,5 @@
 'use client'
-
+import Footer from './components/HomeComps/Footer'
 import { Hero } from '@/app/components/HomeComps/Hero'
 import { useAnimation, motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
@@ -8,7 +8,6 @@ import * as React from 'react'
 import About from '@/app/components/HomeComps/About'
 import Navbar from '@/app/components/Navbar'
 import Blogs from '@/app/components/HomeComps/Blogs'
-import Footer from '@/app/components/HomeComps/Footer'
 
 function ScrollAnimation({ children }: any) {
   const controls = useAnimation()

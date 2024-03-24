@@ -24,7 +24,7 @@ export default async function BlogArticle({
 }) {
   const data: fullBlog = await getData(params.slugs)
   return (
-    <main>
+    <main className="mx-5">
       <Navbar />
       <div className="mt-8 flex-col items-center mx-auto justify-center">
         <h1>

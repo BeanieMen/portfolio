@@ -30,14 +30,14 @@ export default function BlogCard({ post, className }: Props) {
           whileTap={{ scale: 0.95 }}
           className="justify-center"
         >
-          <Card className="border-0 dark:border-stone-800 dark:border w-[90%] mx-auto relative flex flex-col bg-white dark:bg-black shadow-2xl dark:shadow-none h-[425px]">
+          <Card className="border-0 dark:border-stone-800 dark:border w-full max-w-[414px] mx-auto relative flex flex-col bg-white dark:bg-black shadow-2xl dark:shadow-none h-[425px]">
             <div>
               <Image
                 src={urlFor(post.titleImage).url()}
                 alt="image"
                 width={400}
                 height={400}
-                className="rounded-t-lg h-[250px] max-w-screen object-cover flex justify-center mx-auto"
+                className="rounded-t-lg h-[250px] w-full max-w-screen object-cover flex justify-center mx-auto"
               />
             </div>
             <div className="flex flex-grow justify-center items-center">

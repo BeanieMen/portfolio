@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <motion.div
-      className="-mt-5 flex items-center justify-center relative"
+      className="-mt-5 mx-5 flex items-center justify-center relative"
       initial={{
         scale: 0,
       }}
@@ -32,18 +32,20 @@ export default function Navbar() {
         duration: 0.5,
       }}
     >
-      <div className="relative">
+      <div className="flex flex-col">
         <div className="absolute inset-0 flex items-center justify-center -z-50">
-          <div className="w-full h-full bg-gradient-to-r from-blue-700 via-orange-500 to-pink-700 opacity-75 blur-3xl" />
+          <div className="w-full h-full max-w-4xl bg-gradient-to-r from-blue-700 via-orange-500 to-pink-700 opacity-75 blur-3xl" />
         </div>
+
         <div
-          className={` max-w-4xl w-[95vw]  h-14 my-10 rounded-lg bg-white dark:bg-black bg-opacity-40 dark:bg-opacity-40 grid ${isDesktop ? 'grid-cols-3' : 'grid-cols-2'} justify-between items-center`}
+          className={`max-w-4xl h-14 my-10 rounded-lg bg-white dark:bg-black bg-opacity-40 dark:bg-opacity-40 grid ${isDesktop ? 'grid-cols-3' : 'grid-cols-2'} justify-between items-center`}
+          style={{ width: 'calc(100vw - 40px)' }}
         >
           <div>
             <Link href="/">
               <Image
                 src="/avatar.jpg"
-                className="rounded-full justify-start items-center mx-5"
+                className="rounded-full justify-start items-center ml-4"
                 width={40}
                 height={40}
                 alt="Beanie"
@@ -54,7 +56,7 @@ export default function Navbar() {
           {isDesktop && (
             <div className="hidden md:flex items-center gap-x-10 justify-center">
               <div>
-                <Link href={'/About'}>About</Link>
+                <Link href={'/about'}>About</Link>
               </div>{' '}
               <div>
                 <Link href={'/blogs'}>Blog</Link>
