@@ -34,9 +34,9 @@ export default function About() {
             Typescript, Next.JS, React.JS, Node.JS
             <br />
             <br />I started learning web development as a new years resolution
-            of 2024. as I already had some experience with typescript as i
-            contributed to open source, learning about react and next JS
-            wasn&apos;t a big a challenge
+of 2024. as I already had some experience with typescript as I
+contributed to open source, learning about reacting and Next JS
+wasn&apos;t a big challenge
           </div>
         </div>
 
